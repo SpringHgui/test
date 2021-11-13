@@ -41,3 +41,8 @@ jobs:
      runs-on: ubuntu-latest
      if: ${{ steps.get_version.outputs.VERSION }}
      name: testif
+     steps:
+       - uses: actions/checkout@v2
+       - run: |
+          echo Hello, world!
+       
